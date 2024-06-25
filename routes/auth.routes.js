@@ -4,9 +4,9 @@ const routes = express.Router();
 
 routes.get("/hello", (request, response) => {
     try {
-        return response.status(200).json({message: "Hello world"})
+        return response.status(200).json({message: "Hello world"});
     } catch (error) {
-        return response.status(500).json({error: "Internal server error"})
+        return response.status(500).json({error: "Internal server error"});
     }
 })
 
